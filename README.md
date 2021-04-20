@@ -19,3 +19,7 @@ Prepare a submission.
 `zip -r submission.zip submission.csv`
 
 Done! Upload `submission.zip` to CodaLab.
+
+# Terms
+
+[The full text of Terms and Conditions.](https://github.com/Toloka/VLDB2021_Crowd_Science_Challenge/blob/main/Terms.pdf)
