@@ -14,7 +14,7 @@ Run the scoring program.
 
 `python3 evaluate_codalab.py . .` Now you can see your score on the train set in the file `scores.txt`.
 
-Prepare a submission.
+Prepare a submission. Note that file must have a name `submission.csv`.
 
 `zip -r submission.zip submission.csv`
 
