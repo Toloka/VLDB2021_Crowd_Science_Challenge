@@ -21,7 +21,7 @@ As we have the predictions stored in the `submission.csv`, we can create a submi
 
 `zip -r MyFirstSubmission.zip submission.csv`
 
-**Importantly**, the submission archive must contain a file named `submission.csv` inside with columns `task` (ID of the task) and `output` (predicted annotation). The name of the archive can be arbitrary.
+**Importantly**, the submission archive must contain a file named `submission.csv` inside with columns `task` (ID of the task) and `output` (predicted transcription). The name of the archive can be arbitrary.
 
 ## How to evaluate your submission locally
 
