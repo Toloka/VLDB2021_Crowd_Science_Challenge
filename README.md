@@ -27,7 +27,7 @@ As we have the predictions stored in the `submission.csv`, we can create a submi
 
 To run a CodaLab scoring program, create additional directories using the following command:
 
-`mkdir res ref & cp data/train/gt.csv ref/gt.csv & cp submission.csv res/submission.csv`
+`mkdir res ref && cp data/train/gt.csv ref/gt.csv && cp submission.csv res/submission.csv`
 
 Now you can run the scoring program (you may need to install the `jiwer` package using `pip install jiwer`):
 
