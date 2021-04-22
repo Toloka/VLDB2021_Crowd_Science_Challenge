@@ -42,6 +42,6 @@ For this, you need to install the [jiwer](https://pypi.org/project/jiwer/) Pytho
 
 Having installed the jiwer library, run the following command to evaluate your submission with our scoring program:
 
-* `python3 evaluate.py --gt data/train/gt.csv --submission submission.csv`
+`python3 evaluate.py --gt data/train/gt.csv --submission submission.csv`
 
 The output of this command is your score.
