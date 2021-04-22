@@ -3,11 +3,7 @@ This repository contains startket kit to jump into the competition. Specifically
 
 ## Overview of the competition
 
-Speech-to-text projects are ubiquitous on crowdsourcing platforms. However, individual annotators on these platforms are often unskilled or even malicious. Thus, transcriptions collected on crowdsourcing platforms may be noisy. To account for this problem, each audio is typically transcribed into text by multiple crowd annotators. But how do we aggregate these multiple transcriptions to obtain the final high-quality transcription? The goal of this competition is to answer this question. Specifically, the goal of participants is to build a model that aggregates multiple transcriptions of an audio obtained on a crowdsourcing platform into a single transcription. 
-
-For this competition, we annotated a large number of audios on the [Toloka](https://toloka.ai) crowdsourcing platform and release this real data to participants. Please read the "Dataset" section (under "Participate" tab) to understand the format of the data.
-
-### Phases
+Speech-to-text projects are ubiquitous on crowdsourcing platforms. However, individual annotators on these platforms are often unskilled or even malicious. Thus, transcriptions collected on crowdsourcing platforms may be noisy. To account for this problem, each audio is typically transcribed into text by multiple crowd annotators. But how do we aggregate these multiple transcriptions to obtain the final high-quality transcription? The goal of this competition is to answer this question. Specifically, *the goal of participants is to build a model that aggregates multiple transcriptions of an audio obtained on a crowdsourcing platform into a single transcription.* 
 
 **Practice phase** In the practice phase, participants work with training data which has ground truth labels publicly released. Participants can submit their predictions made on train data to out scoring system to try it out.
 
