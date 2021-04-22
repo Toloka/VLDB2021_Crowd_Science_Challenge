@@ -141,4 +141,4 @@ cython_debug/
 Pipfile.lock
 
 # Competition
-*.csv
+/*.csv
