@@ -28,14 +28,16 @@ Your model should work with crowd transcriptions to aggregate them into a single
 ## How to make a submission
 We created a simple baseline program that does a trivial aggregation -- it takes the first transcription of each audio and uses it as a final result. To run this program, execute the following command:
 
-`python3 baseline.py --input_file data/train/responses.csv --output_file submission.csv`
+* `python3 baseline.py --input_file data/train/responses.csv --output_file submission.csv`
 
 The `submission.csv` file now can be uploaded to Yandex.Contest.
 
 ## How to evaluate your submission locally
 
-To evaluate your submission with our scoring program, run the following command:
+Our challenge uses the Word Error Rate (WER) evaluation score. Our evaluation program uses the [JiWER](https://pypi.org/project/jiwer/) library for Python that can be installled via `pip install jiwer`.
 
-`python3 evaluate.py --gt data/train/gt.csv --submission submission.csv`
+Having installed the JiWER library, run the following command to evaluate your submission with our scoring program:
 
-The output of this command will be your score.
+* `python3 evaluate.py --gt data/train/gt.csv --submission submission.csv`
+
+The output of this command is your score.
