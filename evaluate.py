@@ -16,7 +16,7 @@ def main():
     args = parser.parse_args()
 
     gt = pd.read_csv(args.gt)
-    submission = pd.read_csv(args.gt)
+    submission = pd.read_csv(args.submission)
 
     gt['pred'] = submission.set_index('task')['output']
 
