@@ -25,7 +25,7 @@ def main():
         elif not pd.isna(row['pred']):
             total_score += wer_scorer(row['output'].split(), row['pred'].split())
 
-    print(total_score / len(gt))
+    print(total_score * 100 / len(gt))
 
 
 if __name__ == '__main__':
