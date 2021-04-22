@@ -40,7 +40,7 @@ In this starter kit, we provide code to evaluate your submission locally.
 
 For this, you need to install the [jiwer](https://pypi.org/project/jiwer/) Python library  via `pip install jiwer`.
 
-Having installed the JiWER library, run the following command to evaluate your submission with our scoring program:
+Having installed the jiwer library, run the following command to evaluate your submission with our scoring program:
 
 * `python3 evaluate.py --gt data/train/gt.csv --submission submission.csv`
 
