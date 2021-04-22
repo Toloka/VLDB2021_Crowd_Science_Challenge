@@ -1,6 +1,8 @@
 # VLDB 2021 Crowd Science Challenge Starter Kit
 This repository contains startket kit to jump into the competition. Specifically, it contains a simple baseline, train data, and evaluation code -- everything you need to make a first submission!
 
+Once you are ready, follow [this link](https://contest.yandex.ru/contest/27051/problems/) to make a submission!
+
 ## Overview of the competition
 
 Speech-to-text projects are ubiquitous on crowdsourcing platforms. However, individual annotators on these platforms are often unskilled or even malicious. Thus, transcriptions collected on crowdsourcing platforms may be noisy. To account for this problem, each audio is typically transcribed into text by multiple crowd annotators. But how do we aggregate these multiple transcriptions to obtain the final high-quality transcription? The goal of this competition is to answer this question. Specifically, *the goal of participants is to build a model that aggregates multiple transcriptions of an audio obtained on a crowdsourcing platform into a single transcription.* 
