@@ -34,7 +34,11 @@ The `submission.csv` file now can be uploaded to Yandex.Contest.
 
 ## How to evaluate your submission locally
 
-Our challenge uses the Word Error Rate (WER) evaluation score. Our evaluation program uses the [JiWER](https://pypi.org/project/jiwer/) library for Python that can be installled via `pip install jiwer`.
+We use [**Average Word Accuracy (AWAacc)**](https://en.wikipedia.org/wiki/Word_error_rate) -- a widely used metric for evaluating automatic speech recognition systems. Specifically, we use the Python implementation of WER from [jiwer](https://github.com/jitsi/jiwer/) package to compute the WER distance between each submitted prediction and the ground truth sentence. We then define Word Accuracy as **$$\text{WAcc} = 100 \times \max(1 - \text{WER}, 0)$$** and take the mean of these quantities over all sentences to compute **AWAacc**. 
+
+In this starter kit, we provide code to evaluate your submission locally. 
+
+For this, you need to install the [jiwer](https://pypi.org/project/jiwer/) Python library  via `pip install jiwer`.
 
 Having installed the JiWER library, run the following command to evaluate your submission with our scoring program:
 
