@@ -28,7 +28,7 @@ Your model should work with crowd transcriptions to aggregate them into a single
 ## How to make a submission
 We created a simple baseline program that does a trivial aggregation -- it takes the first transcription of each audio and uses it as a final result. To run this program, execute the following command:
 
-* `python3 baseline.py --input_file data/train/responses.csv --output_file submission.csv`
+`python3 baseline.py --input_file data/train/responses.csv --output_file submission.csv`
 
 The `submission.csv` file now can be uploaded to Yandex.Contest.
 
