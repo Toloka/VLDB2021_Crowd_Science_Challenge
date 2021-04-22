@@ -34,7 +34,7 @@ The `submission.csv` file now can be uploaded to Yandex.Contest.
 
 ## How to evaluate your submission locally
 
-We use [**Average Word Accuracy (AWAacc)**](https://en.wikipedia.org/wiki/Word_error_rate) -- a widely used metric for evaluating automatic speech recognition systems. Specifically, we use the Python implementation of WER from [jiwer](https://github.com/jitsi/jiwer/) package to compute the WER distance between each submitted prediction and the ground truth sentence. We then define Word Accuracy as **WAcc = 100  max(1 - WER, 0)** and take the mean of these quantities over all sentences to compute **AWAacc**. 
+We use [**Average Word Accuracy (AWAcc)**](https://en.wikipedia.org/wiki/Word_error_rate) -- a widely used metric for evaluating automatic speech recognition systems. Specifically, we use the Python implementation of WER from [jiwer](https://github.com/jitsi/jiwer/) package to compute the WER distance between each submitted prediction and the ground truth sentence. We then define Word Accuracy as **WAcc = 100  max(1 - WER, 0)** and take the mean of these quantities over all sentences to compute **AWAcc**. 
 
 In this starter kit, we provide code to evaluate your submission locally. 
 
