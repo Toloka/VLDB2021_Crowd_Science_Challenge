@@ -1,7 +1,7 @@
 # VLDB 2021 Crowd Science Challenge Starter Kit
 This repository contains startket kit to jump into the competition. Specifically, it contains a simple baseline, train data, and evaluation code -- everything you need to make a first submission!
 
-Once you are ready, follow [this link](https://contest.yandex.ru/contest/27051/problems/) to make a submission!
+Once you are ready, follow [this link](https://contest.yandex.ru/contest/27051/problems/) to make a submission on Yandex.Contest!
 
 ## Overview of the competition
 
