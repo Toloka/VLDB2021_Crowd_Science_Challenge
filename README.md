@@ -7,13 +7,9 @@ Speech-to-text projects are ubiquitous on crowdsourcing platforms. However, indi
 
 For this competition, we annotated a large number of audios on the [Toloka](https://toloka.ai) crowdsourcing platform and release this real data to participants. Please read the "Dataset" section (under "Participate" tab) to understand the format of the data.
 
-### Metric
-
-To compare predictions made by participants with ground truth texts, we use the [Word Error Rate (WER)](https://en.wikipedia.org/wiki/Word_error_rate) metric. It is a widely used metric for evaluating automatic speech recognition systems. We use the Python implementation of WER from [jiwer](https://github.com/jitsi/jiwer/) package. The format of submissions, code of our scoring function, and data are available on our [GitHub.](https://github.com/Toloka/VLDB2021_Crowd_Science_Challenge)
-
 ### Phases
 
-**Practice phase** In the practice phase, participants work with training data which has ground truth labels publicly released. Participants can submit their predictions made on train data to CodaLab to try out our scoring system.
+**Practice phase** In the practice phase, participants work with training data which has ground truth labels publicly released. Participants can submit their predictions made on train data to out scoring system to try it out.
 
 **Evaluation phase** At the beginning of the evaluation phase, we will release test data transcriptions (ground truth labels for the test data will not be released). The test data consists of two parts: public and private (the split on public and private parts are not known to participants). Throughout the evaluation phase, submissions will be evaluated on the public part of the test data and the best score achieved by each team will be stored on the public leaderboard. 
 
@@ -28,7 +24,7 @@ The `data/train` folder contains train data which consists of transcriptions of 
 
 - Crowd Transcriptions (responses.csv). This file contains triples (id of audio, transcription, id of annotator).
 
-Your model should work with crowd transcriptions to aggregate them into a single transcription of each audio. Please see [Competition Goal and Evaluation](https://competitions.codalab.org/competitions/30835#learn_the_details-evaluation) section on the competition page for more details.
+Your model should work with crowd transcriptions to aggregate them into a single transcription of each audio. 
 
 
 ## How to make a submission
