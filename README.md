@@ -17,20 +17,12 @@ We created a simple baseline program that does a trivial aggregation -- it takes
 
 `python3 baseline.py --input_file data/train/responses.csv --output_file submission.csv`
 
-As we have the predictions stored in the `submission.csv`, we can create a submission archive that can be [uploaded](https://competitions.codalab.org/competitions/30835#participate) to CodaLab (make sure you select the right phase of the competition):
-
-`zip -r MyFirstSubmission.zip submission.csv`
-
-**Importantly**, the submission archive must contain a file named `submission.csv` inside with columns `task` (ID of the task) and `output` (predicted transcription). The name of the archive can be arbitrary.
+The `submission.csv` file now can be uploaded to Yandex.Contest.
 
 ## How to evaluate your submission locally
 
-To run a CodaLab scoring program, create additional directories using the following command:
+To evaluate your submission with our scoring program, run the following command:
 
-`mkdir res ref && cp data/train/gt.csv ref/gt.csv && cp submission.csv res/submission.csv`
+`python3 evaluate.py --gt data/train/gt.csv --submission submission.csv`
 
-Now you can run the scoring program (you may need to install the `jiwer` package using `pip install jiwer`):
-
-`python3 evaluate_codalab.py . .` 
-
-The output of the scoring function will be stored in `scores.txt`.
+The output of this command will be your score.
