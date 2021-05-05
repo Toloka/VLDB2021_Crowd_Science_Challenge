@@ -16,16 +16,16 @@ def main():
     args = parser.parse_args()
 
     gt = pd.read_csv(args.gt)
+    gt = gt.set_index('task')
     submission = pd.read_csv(args.submission)
 
     gt['pred'] = submission.set_index('task')['output']
-
     total_score = 0.0
     for _, row in gt.iterrows():
         if pd.isna(row['output']):
             raise ValueError('Prediction has unknown tasks')
         elif not pd.isna(row['pred']):
-            total_score += wer_scorer(row['output'].split(), row['pred'].split())
+            total_score += wer_scorer(row['output'], row['pred'])
 
     print(total_score * 100 / len(gt))
 
