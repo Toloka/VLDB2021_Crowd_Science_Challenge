@@ -33,7 +33,7 @@ The `data/test` folder contains test data which consists of audio transcriptions
 
 - Crowd Transcriptions (`responses.csv`). This file contains triples (id of audio, transcription, id of annotator).
 
-Your model should work with crowd transcriptions to aggregate them into a single transcription of each audio.
+Your model should work with crowd transcriptions to aggregate them into a single transcription of each audio. Note that ids of annotators in the test and train data are independent -- an annotator with id pX in the train set and an annotator with id pX in the test set are different people.
 
 ## How to make a submission
 We created a simple baseline program that does a trivial aggregation -- it takes the first transcription of each audio and uses it as a final result. To run this program, execute the following command:
