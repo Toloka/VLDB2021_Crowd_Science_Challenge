@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article from preferred-citation."
+authors:
+- family-names: "Pavlichenko"
+  given-names: "Nikita"
+  orcid: "https://orcid.org/0000-0002-7330-393X"
+- family-names: "Stelmakh"
+  given-names: "Ivan"
+- family-names: "Ustalov"
+  given-names: "Dmitry"
+  orcid: "https://orcid.org/0000-0002-9979-2188"
+title: "VLDB 2021 Crowd Science Challenge Starter Kit"
+repository-code: "https://github.com/Toloka/VLDB2021_Crowd_Science_Challenge"
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Ustalov"
+    given-names: "Dmitry"
+  - family-names: "Pavlichenko"
+    given-names: "Nikita"
+  - family-names: "Stelmakh"
+    given-names: "Ivan"
+  - family-names: "Kuznetsov"
+    given-names: "Dmitriy"
+  title: "VLDB 2021 Crowd Science Challenge on Aggregating Crowdsourced Audio Transcriptions"
+  year: 2021
+  collection-title: "Proceedings of the 2nd Crowd Science Workshop: Trust, Ethics, and Excellence in Crowdsourced Data Management at Scale"
+  conference:
+    name: "Crowd Science Workshop: Trust, Ethics, and Excellence in Crowdsourced Data Management at Scale"
+    date-end: 2021-08-20
+    city: "Copenhagen"
+    country: DK
+  start: 1
+  end: 7
+  url: "http://ceur-ws.org/Vol-2932/invited1.pdf"
